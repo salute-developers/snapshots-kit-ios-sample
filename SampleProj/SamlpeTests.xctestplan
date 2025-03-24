@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "2236CC1C-10F0-4781-BE45-4858B37087BC",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:SampleProj.xcodeproj",
+        "identifier" : "9BF4B79A2D4B770D00F4E9E6",
+        "name" : "SDSnapshotTests"
+      }
+    }
+  ],
+  "version" : 1
+}
