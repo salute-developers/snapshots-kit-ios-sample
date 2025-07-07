@@ -3,7 +3,7 @@ import SwiftUI
 import UIKit
 import XCTest
 
-final class AccessibilitySnapshotTests: XCTestCase {
+final class AccessibilitySnapshotTests: SnapshotTest {
     func test_Accessibility_InView() async {
         await Xct.snapshotAsync(includeAccessibility: true) { _ in
             AccessibleView()

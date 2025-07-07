@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/salute-developers/snapshots-kit-ios",
       "state" : {
-        "revision" : "1dc91b1f69775a355671a8bedfabc558c7052b22",
-        "version" : "1.0.0"
+        "revision" : "25bfabac78ff799598726da61fbe5efec9fcda0d",
+        "version" : "1.1.0"
       }
     }
   ],

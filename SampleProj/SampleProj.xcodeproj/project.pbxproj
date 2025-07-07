@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B200B1F2D9149D800CC1A98 /* SDSnapshots in Frameworks */ = {isa = PBXBuildFile; productRef = 9B200B1E2D9149D800CC1A98 /* SDSnapshots */; };
+		9B834D5F2E1BDA7D002699BD /* SDSnapshots in Frameworks */ = {isa = PBXBuildFile; productRef = 9B200B1E2D9149D800CC1A98 /* SDSnapshots */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B200B1F2D9149D800CC1A98 /* SDSnapshots in Frameworks */,
+				9B834D5F2E1BDA7D002699BD /* SDSnapshots in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +475,7 @@
 			repositoryURL = "https://github.com/salute-developers/snapshots-kit-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 1.0.0;
+				version = 1.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

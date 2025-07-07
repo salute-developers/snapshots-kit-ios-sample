@@ -2,7 +2,7 @@
 import UIKit
 import XCTest
 
-final class SafeAreaSnapshotTests: XCTestCase {
+final class SafeAreaSnapshotTests: SnapshotTest {
     private let deviceGroup: SnapshotDeviceGroup = (.phone + .tablet).universal
 
     func test_SafeArea_InView() async {
@@ -11,7 +11,6 @@ final class SafeAreaSnapshotTests: XCTestCase {
             sut.specText = device.specText
             return sut
         }
-        
     }
 
     func test_SafeArea_InViewController() async {
@@ -20,7 +19,6 @@ final class SafeAreaSnapshotTests: XCTestCase {
             sut.specText = device.specText
             return SafeAreaViewController(safeAreaView: sut).view
         }
-        
     }
 
     func test_WithoutSafeArea_InView() async {
@@ -29,7 +27,6 @@ final class SafeAreaSnapshotTests: XCTestCase {
             sut.specText = device.specText
             return sut
         }
-        
     }
 
     func test_WithoutSafeArea_InViewController() async {
@@ -38,7 +35,6 @@ final class SafeAreaSnapshotTests: XCTestCase {
             sut.specText = device.specText
             return SafeAreaViewController(safeAreaView: sut).view
         }
-        
     }
 }
 

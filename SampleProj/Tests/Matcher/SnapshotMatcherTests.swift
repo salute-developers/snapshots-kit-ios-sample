@@ -12,29 +12,17 @@ final class SnapshotMatcherTests: XCTestCase {
 
     // MARK: - Simple
 
-    func test_SimpleFrames_Point() async {
-        await assertNoFalseErrorOnSimpleFrames(.pointColorDiff)
-    }
-
     func test_SimpleFrames_PointConcurrent() async {
         await assertNoFalseErrorOnSimpleFrames(.pointColorDiffConcurrent)
     }
 
     // MARK: - Text
 
-    func test_Text_Point() async {
-        await assertNoFalseErrorOnText(.pointColorDiff)
-    }
-
     func test_Text_PointConcurrent() async {
         await assertNoFalseErrorOnText(.pointColorDiffConcurrent)
     }
 
     // MARK: - Gradient
-
-    func test_Gradient_Point() async {
-        await assertNoFalseErrorOnGradient(.pointColorDiff)
-    }
 
     func test_Gradient_PointConcurrent() async {
         await assertNoFalseErrorOnGradient(.pointColorDiffConcurrent)
@@ -44,29 +32,17 @@ final class SnapshotMatcherTests: XCTestCase {
 
     // MARK: - Button Shift 1
 
-    func test_ButtonShiftOnePoint_Point() async {
-        await assertDetectsButtonShift(1, .pointColorDiff, expected: Array(repeating: .comparingFailed, count: 6))
-    }
-
     func test_ButtonShiftOnePoint_PointConcurrent() async {
         await assertDetectsButtonShift(1, .pointColorDiffConcurrent, expected: Array(repeating: .comparingFailed, count: 6))
     }
 
     // MARK: - Button Shift 10
 
-    func test_ButtonShiftTenPoints_Point() async {
-        await assertDetectsButtonShift(10, .pointColorDiff, expected: Array(repeating: .comparingFailed, count: 6))
-    }
-
     func test_ButtonShiftTenPoints_PointConcurrent() async {
         await assertDetectsButtonShift(10, .pointColorDiffConcurrent, expected: Array(repeating: .comparingFailed, count: 6))
     }
 
     // MARK: - 1 Character color
-
-    func test_CharacterColorChanged_Point() async {
-        await assertDetectsCharacterColorChange(.pointColorDiff, expected: Array(repeating: .comparingFailed, count: 6))
-    }
 
     func test_CharacterColorChanged_PointConcurrent() async {
         await assertDetectsCharacterColorChange(
@@ -76,10 +52,6 @@ final class SnapshotMatcherTests: XCTestCase {
     }
 
     // MARK: - Button color
-
-    func test_ButtonColorChanged_Point() async {
-        await assertDetectsButtonColorChange(.pointColorDiff, expected: Array(repeating: .comparingFailed, count: 6))
-    }
 
     func test_ButtonColorChanged_PointConcurrent() async {
         await assertDetectsButtonColorChange(
